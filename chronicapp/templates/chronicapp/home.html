@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if title %} {{title}} {% else %} SANITAS CHRONIC {% endif %}
+    </title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <article>
+      {% block content %}
+      <!-- HEADER SECTION-->
+      <header>
+        <div class="header__container">
+          <!-- top section -->
+
+          <a href="{% url 'HomePage' %}">
+            <h1 class="logo">Sanitas <span>Chronic</span></h1>
+          </a>
+
+          <nav class="site-nav">
+            <ul>
+              <li><a href="{% url 'SolutionsPage' %}">Solutions</a></li>
+              <li><a href="{% url 'ProductsPage' %}">Products</a></li>
+              <li><a href="{% url 'GroupsPage' %}">People Groups</a></li>
+              <li><a href="{% url 'RemindersPage' %}">Reminders</a></li>
+              <li><a href="{% url 'LoginPage' %}">Login</a></li>
+              <li><a href="{% url 'RegisterPage' %}">Register</a></li>
+            </ul>
+          </nav>
+
+          <div class="menu-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="sectionMainTop">
+          <div id="sectionMainTopContainer">
+            <h1>Emergency treatment | Emergency kits | Ambulance Response</h1>
+            <div id="mainContent">
+              <p>
+                Medic alerts & Emergency Response (Domestic violence, sexual
+                assault, Suicide attempts)
+              </p>
+              <button id="heroButton">Discover More >></button>
+            </div>
+          </div>
+        </section>
+
+        <!-- SectionFeatures -->
+
+        <section id="SectionFeatures">
+          <div id="sectionContainer">
+
+            <div id="titleFeaturesOne">
+              <h1>Features</h1>
+            </div>
+            <div id="titleFeaturesTwo">
+              <h1>Our Solutions</h1>
+            </div>
+
+            <div id="titleFeaturesThree">         
+              
+              <div id="featuresColumnOne">
+               <div  id="minTitle">
+                Online Doctors
+               </div>
+                <div id="minTitleParagraph">
+                 <p> Unwell ( online doc vs nearest hospital), recruit doc, GPS</p>
+                </div>
+              </div>
+
+              <div id="featuresColumnTwo">
+                <div id="minTitle">
+                  Pharmacy
+                </div>
+                <div id="minTitleParagraph">
+                  <p>Pharmacy (previous records, new order), Pharm tec</p>
+                </div>
+              </div>
+
+              <div id="featuresColumnThree">
+                <div id="minTitle">
+                  Labs
+                </div>
+                <div id="minTitleParagraph">
+                  <p>Lab (previous records, send technician), Lab tec</p>
+                </div>
+              </div>
+
+              <div id="featuresColumnFour">
+               <div id="minTitle"> Radiology</div>
+
+                <div id="minTitleParagraph">
+                  <p>Radiology ( Emergency, standard booking),Ambulance transport, preference referrals </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- SectionMainMiddle -->
+
+        <section id="sectionMainMiddle">
+          <div id="section__main__container">
+            
+            <!-- Left side -->
+            <div id="main__container__left">
+              <div id="main__left_side__section">
+                <div id="HowItWorksTitle" >
+                  <h1>How it Works ... </h1>   
+                </div> 
+                <div id="worksOne">
+                  <div>
+                    <p>01: Register</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div>
+                    <p>02: Prepare profile </p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+
+                <div id="worksTwo">
+                  <div>
+                    <p>03: Meeting with our rep </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div>
+                    <p>04: Support begins</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                </div>               
+                
+              </div>
+            </div>
+
+            <!-- Right side -->
+
+            <div id="main__container__right"> <img src="{% static 'images/how__manage1.png' %}" alt="chronic disease"></div>
+          </div>
+        </section>
+
+        <!-- SectionMainLower -->
+
+        <section id="sectionMainLower">
+          <div id="section__main__lower__container">
+            <div id="main__lower__container__left">  
+              <img src="{% static 'images/chronic-disease-slide1.png' %}" alt="chronic disease">              
+            </div>
+
+            <div id="main__lower__container__right">
+              <h1>Medical supplies</h1>
+              <p> Medical supplies(  comfy shoes, nerve pain & sick clothes, beddings, compression stockings, 
+                doning for medics, Implants and assistive devices, diabetic & hypertensive footwear, pill casings, 
+                vital signs monitors)sylvia, DFT, imports, cobbler who can make shoes, plastics moulder, </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SectionParagraphs -->
+
+        <section id="sectionParagraphs">
+          <div id="section__paragraph__container">
+            <div id="main__paragraph__container__left">
+              <h1>Text on Left</h1>
+            </div>
+
+            <div id="main__lower__container__rigth">
+              <h1>Text on right</h1>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- Our partners -->
+
+
+        <section id="ourPartners">
+          <div id="ourPartnersContainer">
+            <div id="ourPartnersTitle">
+              <h1>Our Partners</h1>
+            </div>
+            <div id="ourPartnersContent">
+              <ul>
+                <li><a href="">Safaricom</a></li>
+                <li><a href="">KCB Bank</a></li>
+                <li><a href="">Chamka Drones</a></li>
+                <li><a href="">Hellen Pharmancy</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Support a course -->
+
+        <section id="sectionSupportCourse">
+          <div id="section__Support__Course__Container">
+            <div id="supportCourseAction">
+              <h1>
+                Do you want to support a course? <button id="supportButton">Support here >> </button>
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        <!-- SectionParagraphs -->
+
+        <section id="sectionSubFooter">
+          <div id="section__subfooter__container">
+            <div id="main__paragraph__container__one">
+              <h1>Sanitas Chronic</h1>
+            </div>
+
+            <div id="main__paragraph__container__two">
+              <h1>Solutions</h1>
+
+              <p>
+                <ul>
+                  <li><a href="">Guidance</a></li>
+                  <li><a href="">Counselling</a></li>
+                  <li><a href="">Booking Sessions</a></li>
+                  <li><a href="">Special School</a></li>
+                  <li><a href="">Safe Homes</a></li>
+                </ul>
+              </p>
+             
+            </div>
+
+            <div id="main__paragraph__container__three">
+              <h1>Products</h1>
+              <p>
+                <ul>
+                  <li><a href="">Guidance</a></li>
+                  <li><a href="">Counselling</a></li>
+                  <li><a href="">Booking Sessions</a></li>
+                  <li><a href="">Special School</a></li>
+                  <li><a href="">Safe Homes</a></li>
+                </ul>
+              </p>
+            </div>
+            <div id="main__paragraph__container__four">
+              <h1>People Groups</h1>
+              <p>
+                <ul>
+                  <li><a href="">Guidance</a></li>
+                  <li><a href="">Counselling</a></li>
+                  <li><a href="">Booking Sessions</a></li>
+                  <li><a href="">Special School</a></li>
+                  <li><a href="">Safe Homes</a></li>
+                </ul>
+              </p>
+            </div>
+
+            <div id="main__paragraph__container__five">
+              <h1>Quick Links</h1>
+              <p>
+                <ul>
+                  <li><a href="">Guidance</a></li>
+                  <li><a href="">Counselling</a></li>
+                  <li><a href="">Booking Sessions</a></li>
+                  <li><a href="">Special School</a></li>
+                  <li><a href="">Safe Homes</a></li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Social Media Section -->
+
+        <section id="socialMediaSection">
+          <div id="socialMediaContainer">
+
+            <div id="social__Column__One">
+              <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Youtube</a></li>
+              </ul>
+            </div>
+
+            <div id="social__Column__Two">
+              <ul><li>Your Location: <input id="socialInput" type="text" placeholder="Your location"></li></ul>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER SECTION-->
+
+      <footer>
+       <div id="footerContainer">
+
+          <div id="footerContainerLeft">
+            <p>© 2023 Sanitas Chronic</p>
+          </div>
+          <div id="footerContainerRight"> 
+            <ul>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Accessibility</a></li>
+              <li><a href="">Terms</a></li>
+            </ul>
+          </div>
+         
+       </div>
+      </footer>
+
+      {% endblock %}
+    </article>
+
+    <script src="{% static 'js/app.js' %}" defer></script>
+  </body>
+</html>

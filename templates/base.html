@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if title %} {{title}} {% else %} SANITAS CHRONIC {% endif %}
+    </title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <article>
+      {% block content %}
+
+      <!-- HEADER SECTION-->
+
+      <header>
+        <!-- NavBar Section-->
+
+        <nav>
+          <div class="logo">
+            <h1><a href="{% url 'HomePage' %}">Sanitas Chronic</a></h1>
+          </div>
+          <ul class="nav-links">
+            <!-- missin links -->
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- HEADER SECTION-->
+      <main></main>
+
+      <!-- FOOTER SECTION-->
+
+      <footer></footer>
+
+      {% endblock %}
+    </article>
+  </body>
+</html>
